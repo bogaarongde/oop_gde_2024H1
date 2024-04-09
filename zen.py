@@ -1,1 +1,3 @@
 import this
+
+s = "alma"
