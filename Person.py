@@ -11,7 +11,19 @@ class Person:
         return now-self.birth_year >= 18
 
 
-my_person = Person("Tomi", 2000)
+input_name = input("Mi az ember neve: ")
+
+while True:
+    input_birth_year = input("Mikor született: ")
+
+    try:
+        input_birth_year_integer = int(input_birth_year)
+        break
+    except ValueError:
+        print("Nem szám, amit beírtál, írj be újat")
+
+
+my_person = Person(input_name, input_birth_year_integer)
 
 my_person.welcome()
 
