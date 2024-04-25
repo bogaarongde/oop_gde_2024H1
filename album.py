@@ -68,6 +68,7 @@ class Album:
     def content(self):
         for picture in self._content:
             print(f"Név: {picture.name}.{picture.format}")
+        return True
 
     @content.setter
     def content(self,ertke):
