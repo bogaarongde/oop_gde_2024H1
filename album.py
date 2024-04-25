@@ -62,7 +62,7 @@ class Album:
         if self._owner.check_password():
             self._content.append(add_pic)
         else:
-            print("Rossz jelszó")
+            print("Rossz jelszó!")
 
     @property
     def content(self):
